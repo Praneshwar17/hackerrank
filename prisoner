@@ -8,8 +8,10 @@ import sys
 def saveThePrisoner(n, m, s):
     if ((m+s-1)%n==0):
         return n
+	#return n if found
     else:
         return (m+s-1)%n
+	#return summinus 1
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
